@@ -472,4 +472,21 @@ public class LessonWithRental extends Rental {
     }
 
 }
+================EquipmentWithLesson================
+
+public class EquipmentWithLesson extends Equipment {
+
+    public EquipmentWithLesson(int equipType, String equipName, String[] equipNameList, int[] surcharges) {
+        super(equipType);
+    }
+
+    public EquipmentWithLesson(int equipType) {
+    }
+
+    @Override
+    String policy() {
+        return "This type of rental requires a lesson";
+    }
+
+}
 
